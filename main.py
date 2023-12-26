@@ -4,7 +4,6 @@ from ultralytics import YOLO
 import cvzone
 import numpy as np
 
-from vidgear.gears import CamGear
 
 model=YOLO('best.pt')
 
@@ -73,8 +72,7 @@ while True:
     cv2.imshow("RGB", frame)
     if cv2.waitKey(1)&0xFF==27:
         break
-#cap.release()
-stream.stop()    
+cap.release()  
 cv2.destroyAllWindows()
 
 
