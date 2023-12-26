@@ -1,7 +1,7 @@
 import cv2    
 import time
 cpt = 0
-maxFrames = 500 # if you want 5 frames only.
+maxFrames = 130 # if you want 5 frames only.
 
 count=0
 cap=cv2.VideoCapture('cr.mp4')
